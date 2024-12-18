@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.oigo.tab_host.MainActivity" >
+
+    <item
+        android:id="@+id/update"
+        android:orderInCategory="100"
+        android:title="@string/update_vocabulary"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_action_installing_updates_50"
+        />
+    
+    <item
+        android:id="@+id/repetir"
+        android:orderInCategory="99"
+        android:title="@string/repetir_senha"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_action_repeat_50"
+        />
+    
+    <item
+        android:id="@+id/hola"
+        android:orderInCategory="98"
+        android:title="@string/hola"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_action_speech_bubble_50"
+        />
+
+</menu>

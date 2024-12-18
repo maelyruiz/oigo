@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/opAlfabeto" android:icon="@mipmap/ic_alfabeto"
+            android:title="Alfabeto" />
+        <item android:id="@+id/opNumeros" android:icon="@mipmap/ic_numeros"
+            android:title="Numeros" />
+        <item android:id="@+id/opNormas" android:icon="@mipmap/ic_noramasdecortesia"
+            android:title="Normas de cortesia" />
+        <item android:id="@+id/opFamilia" android:icon="@mipmap/ic_familia"
+            android:title="Familia" />
+        <item android:id="@+id/opLugares" android:icon="@mipmap/ic_lugares"
+            android:title="Lugares" />
+        <item android:id="@+id/opDeportes" android:icon="@mipmap/ic_deporte"
+            android:title="Deportes" />
+        <item android:id="@+id/opComidas" android:icon="@mipmap/ic_comidas"
+            android:title="Comidas" />
+        <item android:id="@+id/opAlimentos" android:icon="@mipmap/ic_alimentos"
+            android:title="Alimentos" />
+        <item android:id="@+id/opTrabajo" android:icon="@mipmap/ic_trabajo"
+            android:title="Trabajo" />
+        <item android:id="@+id/opColores" android:icon="@mipmap/ic_pintar"
+            android:title="Colores" />
+        <item android:id="@+id/opSemana" android:icon="@mipmap/ic_dias"
+            android:title="Dias de la semana" />
+        <item android:id="@+id/opMeses" android:icon="@mipmap/ic_mes"
+            android:title="Meses" />
+        <item android:id="@+id/opTiempos" android:icon="@mipmap/ic_tiempo"
+            android:title="Tiempos" />
+        <item android:id="@+id/opPronombres" android:icon="@mipmap/ic_pronombre"
+            android:title="Pronombres" />
+        <item android:id="@+id/opInterrogacion" android:icon="@mipmap/ic_preguntas"
+            android:title="Interrogacion" />
+        <item android:id="@+id/opAntonimos" android:icon="@mipmap/ic_antonimos"
+            android:title="Antonimos" />
+        <item android:id="@+id/opSustantivos" android:icon="@mipmap/ic_sustantivos"
+            android:title="Sustantivos" />
+        <item android:id="@+id/opDepartamentos" android:icon="@mipmap/ic_departamentos"
+            android:title="Departamentos" />
+        <item android:id="@+id/opVerbos" android:icon="@mipmap/ic_verbos"
+            android:title="Verbos" />
+
+    </group>
+
+    <item android:title="Test">
+        <menu>
+            <item android:id="@+id/opEvaluacion" android:icon="@mipmap/ic_examen"
+                android:title="Evaluacion" />
+
+        </menu>
+    </item>
+
+</menu>

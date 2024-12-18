@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appbarChat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/listViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutSend"
+        android:layout_below="@+id/appbarChat">
+    </ListView>
+
+    <RelativeLayout
+
+        android:id="@+id/layoutSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/im_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_interprete"
+            android:layout_alignParentLeft="true"
+            android:onClick="senhas"
+            android:nestedScrollingEnabled="true" />
+
+        <EditText
+            android:id="@+id/newmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Send a message"
+            android:layout_toLeftOf="@+id/btnEscucharChat"
+            android:layout_toRightOf="@+id/im_senha">
+        </EditText>
+
+        <ToggleButton
+            android:id="@+id/btnEscucharChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/newmsgsend"
+            android:background="@drawable/select"
+            android:onClick="escuchar"
+            android:textColor="@android:color/transparent" />
+
+
+
+        <ImageButton
+            android:id="@+id/newmsgsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:onClick="enviarMensaje"
+            android:src="@mipmap/ic_enviar" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
