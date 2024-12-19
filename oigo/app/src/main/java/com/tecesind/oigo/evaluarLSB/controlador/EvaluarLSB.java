@@ -16,9 +16,9 @@ import com.tecesind.oigo.R;
  */
 public class EvaluarLSB extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageView btnModulos;
+    private ImageView btnModules;
     private ImageView btnPreguntar;
-    private boolean[] modulos;
+    private boolean[] modules;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +26,13 @@ public class EvaluarLSB extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evaluacion);
 
-        modulos = new boolean[19];
+        modules = new boolean[19];
         for (int i=0; i<19; i++){
-            modulos[i]=true;
+            modules[I]=true;
 
         }
 
-        btnModulos = (ImageView) findViewById(R.id.btnModulos);
+        btnModules = (ImageView) findViewById(R.id.btnModules);
         btnPreguntar = (ImageView) findViewById(R.id.btnPreguntar);
 
         btnModulos.setOnClickListener(this);
@@ -43,9 +43,9 @@ public class EvaluarLSB extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         // TODO Auto-generated method stub
         switch (v.getId()) {
-            case R.id.btnModulos:
+            case R.id.btnModules:
 
-                seleccionarModulos().show();
+                seleccionarModules().show();
                 break;
 
             case R.id.btnPreguntar:
